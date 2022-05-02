@@ -18,7 +18,7 @@ phases:
       # - echo testing...
       # - echo building...
       - ng build --prod
-      - aws s3 rm --recursive "s3://${ARTIFACTS_BUCKET}/"
+      - aws s3 rm --recursive "s3://${angular-application-main}/"
 artifacts:
   files:
     - "**/*"
