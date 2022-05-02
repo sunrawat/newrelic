@@ -1,5 +1,7 @@
 version: 0.1
-
+env:
+    variables:
+        ARTIFACTS_BUCKET: angular-application-main
 phases:
   install:
     commands:
