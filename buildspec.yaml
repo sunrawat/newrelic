@@ -13,7 +13,7 @@ phases:
       - echo installing dependencies...
       - npm i -g @angular/cli
       - npm install
-      - npm run test
+      - npm run test --no-sandbox
   build:
     commands:
       # - echo testing...
