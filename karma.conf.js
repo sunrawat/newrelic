@@ -9,6 +9,7 @@ module.exports = function (config) {
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
+      require( 'karma-phantomjs-launcher' ),
       require('karma-coverage'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
@@ -37,13 +38,8 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-     browsers: ['Chrome_no_sandbox'],
-    customLaunchers: {
-      Chrome_no_sandbox: {
-        base: 'ChromiumHeadless',
-        flags: ['--no-sandbox']
-      }
-    },
+     browsers: ['PhantomJS'],
+
     singleRun: false,
     restartOnFileChange: true
   });
